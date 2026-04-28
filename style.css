@@ -1,0 +1,33 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#C0392B;--red-light:#E74C3C;
+  --cream:#FEF9F2;--warm-white:#FFF8F0;
+  --dark:#2C1A0E;--brown:#6B3A2A;
+  --accent:#E8821A;--accent-light:#F5A623;
+  --text:#2C1A0E;--muted:#8C6B58;
+  --border:#EDD9C8;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+
+nav{background:var(--warm-white);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--dark);letter-spacing:1px;text-decoration:none}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+.nav-btn{background:var(--red);color:#fff;border:none;padding:.5rem 1.4rem;border-radius:20px;font-size:.85rem;cursor:pointer;font-weight:500;transition:background .2s;text-decoration:none}
+.nav-btn:hover{background:var(--red-light)}
+
+section{padding:5rem 2rem}
+.section-tag{font-size:.75rem;text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-weight:500;margin-bottom:.4rem}
+.section-title{font-family:'Playfair Display',serif;font-size:2.3rem;color:var(--dark);margin-bottom:.5rem}
+.section-sub{color:var(--muted);font-size:.93rem;line-height:1.65;max-width:460px}
+.btn-primary{background:var(--red);color:#fff;padding:.8rem 2rem;border-radius:30px;border:none;font-size:.95rem;font-weight:500;cursor:pointer;transition:transform .2s,background .2s;box-shadow:0 4px 16px rgba(192,57,43,.3);text-decoration:none;display:inline-block}
+.btn-primary:hover{background:var(--red-light);transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--brown);color:var(--dark);padding:.8rem 2rem;border-radius:30px;background:transparent;font-size:.95rem;font-weight:500;cursor:pointer;transition:border-color .2s,color .2s;text-decoration:none;display:inline-block}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+
+footer{background:#2C1008;padding:2rem;text-align:center;color:#7A5548;font-size:.82rem}
+footer strong{color:#B07060}
+footer a{color:#B07060;text-decoration:none}
+footer a:hover{color:var(--accent)}
